@@ -1,0 +1,67 @@
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-background text-text;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background: linear-gradient(to right, theme('colors.primary'), theme('colors.secondary'));
+    @apply text-white px-8 py-4 rounded-2xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    border-color: theme('colors.primary');
+    color: theme('colors.primary');
+    @apply border-2 px-8 py-4 rounded-2xl font-semibold transition-all duration-300 hover:bg-primary hover:text-white hover:scale-105;
+  }
+
+  .card {
+    background-color: theme('colors.surface');
+    border-color: theme('colors.border');
+    @apply border rounded-2xl p-8 transition-all duration-300 hover:border-primary/50 hover:shadow-lg;
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, theme('colors.primary'), theme('colors.secondary'), theme('colors.accent'));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9E7FFF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8B5CF6;
+}

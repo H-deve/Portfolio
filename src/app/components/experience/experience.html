@@ -1,0 +1,74 @@
+<section id="experience" class="section-padding">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Experience</h2>
+      <p class="text-xl text-textSecondary max-w-3xl mx-auto">
+        My professional journey and key achievements
+      </p>
+    </div>
+
+    <div class="relative">
+      <!-- Timeline Line -->
+      <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-accent"></div>
+
+      <div class="space-y-12">
+        <div *ngFor="let experience of experiences; let i = index"
+             class="relative flex items-start">
+
+          <!-- Timeline Dot -->
+          <div class="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg"></div>
+
+          <!-- Content -->
+          <div class="ml-20 card w-full">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+              <div>
+                <h3 class="text-xl font-bold text-text mb-1">{{experience.position}}</h3>
+                <p class="text-primary font-semibold">{{experience.company}}</p>
+              </div>
+              <div class="text-textSecondary text-sm mt-2 md:mt-0">
+                {{experience.period}}
+              </div>
+            </div>
+
+            <p class="text-textSecondary mb-4 leading-relaxed">
+              {{experience.description}}
+            </p>
+
+            <!-- Achievements -->
+            <div class="mb-4">
+              <h4 class="text-sm font-semibold text-text mb-2 uppercase tracking-wide">Key Achievements</h4>
+              <ul class="space-y-1">
+                <li *ngFor="let achievement of experience.achievements"
+                    class="text-textSecondary text-sm flex items-start">
+                  <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2 mt-2 flex-shrink-0"></span>
+                  {{achievement}}
+                </li>
+              </ul>
+            </div>
+
+            <!-- Technologies -->
+            <div class="flex flex-wrap gap-2">
+                  <span *ngFor="let tech of experience.technologies"
+                        class="bg-surface border border-border text-textSecondary px-3 py-1 rounded-full text-xs">
+                    {{tech}}
+                  </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="mt-20">
+      <h3 class="text-3xl font-bold text-center mb-12 gradient-text">Education</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div *ngFor="let education of educationList" class="card">
+          <h4 class="text-xl font-bold text-text mb-2">{{education.degree}}</h4>
+          <p class="text-primary font-semibold mb-2">{{education.school}}</p>
+          <p class="text-textSecondary text-sm mb-4">{{education.period}}</p>
+          <p class="text-textSecondary">{{education.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
