@@ -1,74 +1,246 @@
-<section id="experience" class="section-padding">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Experience</h2>
-      <p class="text-xl text-textSecondary max-w-3xl mx-auto">
-        My professional journey and key achievements
-      </p>
-    </div>
+<div class="min-h-screen bg-gray-900 text-white py-20">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-blue-400">
+      Mes Expériences Professionnelles
+    </h1>
+    <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+      Un parcours riche en challenges et réalisations dans le développement web.
+    </p>
 
+    <!-- Timeline des expériences -->
     <div class="relative">
-      <!-- Timeline Line -->
-      <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-accent"></div>
+      <!-- Ligne verticale -->
+      <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500"></div>
 
-      <div class="space-y-12">
-        <div *ngFor="let experience of experiences; let i = index"
-             class="relative flex items-start">
+      <!-- Expérience 1 -->
+      <div class="flex flex-col md:flex-row mb-16">
+        <div class="md:w-1/2 md:pr-12 md:text-right">
+          <div class="mb-6 md:mb-0">
+            <span class="inline-block px-4 py-2 bg-blue-500 text-white rounded-full text-sm font-semibold">
+              2022 - Présent
+            </span>
+          </div>
+        </div>
 
-          <!-- Timeline Dot -->
-          <div class="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg"></div>
+        <!-- Point sur la timeline -->
+        <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 md:-translate-x-1/2">
+          <div class="w-6 h-6 bg-blue-500 rounded-full border-4 border-gray-900"></div>
+        </div>
 
-          <!-- Content -->
-          <div class="ml-20 card w-full">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-              <div>
-                <h3 class="text-xl font-bold text-text mb-1">{{experience.position}}</h3>
-                <p class="text-primary font-semibold">{{experience.company}}</p>
+        <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+          <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl hover:shadow-blue-500/20 hover:border-blue-500/50 border border-gray-700 transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center mr-4">
+                <span class="text-2xl">💼</span>
               </div>
-              <div class="text-textSecondary text-sm mt-2 md:mt-0">
-                {{experience.period}}
+              <div>
+                <h3 class="text-xl font-bold">Développeur Full Stack Senior</h3>
+                <p class="text-blue-400 font-semibold">Tech Solutions Inc.</p>
               </div>
             </div>
 
-            <p class="text-textSecondary mb-4 leading-relaxed">
-              {{experience.description}}
+            <p class="text-gray-300 mb-4">
+              Développement et maintenance d'applications web complexes avec Angular et Node.js.
+              Responsable de l'architecture frontend et de la formation des nouveaux développeurs.
             </p>
 
-            <!-- Achievements -->
-            <div class="mb-4">
-              <h4 class="text-sm font-semibold text-text mb-2 uppercase tracking-wide">Key Achievements</h4>
-              <ul class="space-y-1">
-                <li *ngFor="let achievement of experience.achievements"
-                    class="text-textSecondary text-sm flex items-start">
-                  <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2 mt-2 flex-shrink-0"></span>
-                  {{achievement}}
-                </li>
+            <div class="mb-6">
+              <h4 class="font-semibold text-blue-300 mb-2">Réalisations :</h4>
+              <ul class="list-disc list-inside text-gray-400 space-y-1">
+                <li>Migration d'une application legacy vers Angular 15</li>
+                <li>Réduction des temps de chargement de 40%</li>
+                <li>Mise en place de tests automatisés avec 95% de couverture</li>
               </ul>
             </div>
 
-            <!-- Technologies -->
             <div class="flex flex-wrap gap-2">
-                  <span *ngFor="let tech of experience.technologies"
-                        class="bg-surface border border-border text-textSecondary px-3 py-1 rounded-full text-xs">
-                    {{tech}}
-                  </span>
+              <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Angular</span>
+              <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Node.js</span>
+              <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">MongoDB</span>
+              <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Docker</span>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expérience 2 -->
+      <div class="flex flex-col md:flex-row mb-16">
+        <div class="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+          <div class="md:mt-8">
+            <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl hover:shadow-green-500/20 hover:border-green-500/50 border border-gray-700 transition-all duration-300">
+              <div class="flex items-center mb-4">
+                <div class="w-16 h-16 bg-gradient-to-br from-green-600 to-green-800 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-2xl">🚀</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">Développeur Frontend</h3>
+                  <p class="text-green-400 font-semibold">StartUp Innovante</p>
+                </div>
+              </div>
+
+              <p class="text-gray-300 mb-4">
+                Développement d'une plateforme SaaS de A à Z avec Angular et RxJS.
+                Mise en place d'architecture micro-frontend et optimisation des performances.
+              </p>
+
+              <div class="mb-6">
+                <h4 class="font-semibold text-green-300 mb-2">Réalisations :</h4>
+                <ul class="list-disc list-inside text-gray-400 space-y-1">
+                  <li>Création d'une bibliothèque de composants réutilisables</li>
+                  <li>Intégration d'animations complexes avec GSAP</li>
+                  <li>Optimisation SEO et accessibilité</li>
+                </ul>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Angular</span>
+                <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">RxJS</span>
+                <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">NgRx</span>
+                <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Jest</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Point sur la timeline -->
+        <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 md:-translate-x-1/2">
+          <div class="w-6 h-6 bg-green-500 rounded-full border-4 border-gray-900"></div>
+        </div>
+
+        <div class="md:w-1/2 md:pl-12 order-1 md:order-2">
+          <div class="mb-6 text-left md:text-right">
+            <span class="inline-block px-4 py-2 bg-green-500 text-white rounded-full text-sm font-semibold">
+              2020 - 2022
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expérience 3 -->
+      <div class="flex flex-col md:flex-row mb-16">
+        <div class="md:w-1/2 md:pr-12 md:text-right">
+          <div class="mb-6 md:mb-0">
+            <span class="inline-block px-4 py-2 bg-purple-500 text-white rounded-full text-sm font-semibold">
+              2018 - 2020
+            </span>
+          </div>
+        </div>
+
+        <!-- Point sur la timeline -->
+        <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 md:-translate-x-1/2">
+          <div class="w-6 h-6 bg-purple-500 rounded-full border-4 border-gray-900"></div>
+        </div>
+
+        <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+          <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl hover:shadow-purple-500/20 hover:border-purple-500/50 border border-gray-700 transition-all duration-300">
+            <div class="flex items-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl flex items-center justify-center mr-4">
+                <span class="text-2xl">🎓</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">Développeur Web Junior</h3>
+                <p class="text-purple-400 font-semibold">Agence Digital</p>
+              </div>
+            </div>
+
+            <p class="text-gray-300 mb-4">
+              Développement de sites web et applications pour divers clients.
+              Apprentissage des bonnes pratiques et des méthodologies agiles.
+            </p>
+
+            <div class="mb-6">
+              <h4 class="font-semibold text-purple-300 mb-2">Réalisations :</h4>
+              <ul class="list-disc list-inside text-gray-400 space-y-1">
+                <li>Création de 20+ sites web responsives</li>
+                <li>Intégration de designs complexes avec CSS3</li>
+                <li>Développement de fonctionnalités e-commerce</li>
+              </ul>
+            </div>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">HTML/CSS</span>
+              <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">JavaScript</span>
+              <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">PHP</span>
+              <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">WordPress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expérience 4 -->
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+          <div class="md:mt-8">
+            <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl hover:shadow-yellow-500/20 hover:border-yellow-500/50 border border-gray-700 transition-all duration-300">
+              <div class="flex items-center mb-4">
+                <div class="w-16 h-16 bg-gradient-to-br from-yellow-600 to-yellow-800 rounded-xl flex items-center justify-center mr-4">
+                  <span class="text-2xl">🎯</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">Stage Développeur</h3>
+                  <p class="text-yellow-400 font-semibold">Entreprise IT</p>
+                </div>
+              </div>
+
+              <p class="text-gray-300 mb-4">
+                Stage de fin d'études en développement web. Découverte de l'environnement
+                professionnel et contribution à des projets concrets.
+              </p>
+
+              <div class="mb-6">
+                <h4 class="font-semibold text-yellow-300 mb-2">Réalisations :</h4>
+                <ul class="list-disc list-inside text-gray-400 space-y-1">
+                  <li>Développement d'une application interne</li>
+                  <li>Documentation technique des projets</li>
+                  <li>Participation aux réunions d'équipe</li>
+                </ul>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">React</span>
+                <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">Express.js</span>
+                <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Point sur la timeline -->
+        <div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 md:-translate-x-1/2">
+          <div class="w-6 h-6 bg-yellow-500 rounded-full border-4 border-gray-900"></div>
+        </div>
+
+        <div class="md:w-1/2 md:pl-12 order-1 md:order-2">
+          <div class="mb-6 text-left md:text-right">
+            <span class="inline-block px-4 py-2 bg-yellow-500 text-white rounded-full text-sm font-semibold">
+              2017 - 2018
+            </span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Education Section -->
+    <!-- Statistiques -->
     <div class="mt-20">
-      <h3 class="text-3xl font-bold text-center mb-12 gradient-text">Education</h3>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div *ngFor="let education of educationList" class="card">
-          <h4 class="text-xl font-bold text-text mb-2">{{education.degree}}</h4>
-          <p class="text-primary font-semibold mb-2">{{education.school}}</p>
-          <p class="text-textSecondary text-sm mb-4">{{education.period}}</p>
-          <p class="text-textSecondary">{{education.description}}</p>
+      <h2 class="text-3xl font-bold text-center mb-12 text-blue-400">En quelques chiffres</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-5xl font-bold text-blue-400 mb-2">4+</div>
+          <p class="text-gray-400">Années d'expérience</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold text-green-400 mb-2">50+</div>
+          <p class="text-gray-400">Projets réalisés</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold text-purple-400 mb-2">30+</div>
+          <p class="text-gray-400">Clients satisfaits</p>
+        </div>
+        <div class="text-center">
+          <div class="text-5xl font-bold text-yellow-400 mb-2">10+</div>
+          <p class="text-gray-400">Technologies maîtrisées</p>
         </div>
       </div>
     </div>
   </div>
-</section>
+</div>

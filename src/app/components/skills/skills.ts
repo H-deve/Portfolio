@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import {NgForOf} from '@angular/common';
+import {CommonModule, NgForOf} from '@angular/common';
+import {FormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
 
 @Component({
   selector: 'app-skills',
-  imports: [
-    NgForOf
-  ],
+  imports: [CommonModule, FormsModule , RouterModule],
   templateUrl: './skills.html',
   styleUrl: './skills.css',
 })

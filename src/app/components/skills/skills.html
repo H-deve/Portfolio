@@ -1,47 +1,156 @@
-<section id="skills" class="section-padding">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Skills & Expertise</h2>
-      <p class="text-xl text-textSecondary max-w-3xl mx-auto">
-        Technologies and tools I use to bring ideas to life
-      </p>
-    </div>
+<div class="min-h-screen bg-gray-900 text-white py-20">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-blue-400">
+      Mes Compétences
+    </h1>
+    <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+      Voici les technologies et outils que j'utilise pour créer des applications web exceptionnelles.
+    </p>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div *ngFor="let category of skillCategories" class="card group">
-        <div class="flex items-center mb-6">
-          <div class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-            <i [class]="category.icon" class="text-white text-xl"></i>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Frontend Skills -->
+      <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl">
+        <div class="flex items-center mb-8">
+          <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+            <span class="text-2xl">🎨</span>
           </div>
-          <h3 class="text-xl font-bold text-text">{{category.name}}</h3>
+          <h2 class="text-2xl font-bold">Frontend</h2>
         </div>
 
-        <div class="space-y-4">
-          <div *ngFor="let skill of category.skills" class="flex items-center justify-between">
-            <span class="text-textSecondary">{{skill.name}}</span>
-            <div class="flex items-center space-x-2">
-              <div class="w-24 h-2 bg-border rounded-full overflow-hidden">
-                <div
-                  class="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000 ease-out"
-                  [style.width.%]="skill.level"
-                ></div>
-              </div>
-              <span class="text-sm text-textSecondary w-8">{{skill.level}}%</span>
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold">Angular</span>
+              <span class="text-blue-400">90%</span>
+            </div>
+            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+              <div class="h-full bg-blue-500 rounded-full" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold">TypeScript</span>
+              <span class="text-blue-400">85%</span>
+            </div>
+            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+              <div class="h-full bg-blue-500 rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold">Tailwind CSS</span>
+              <span class="text-blue-400">95%</span>
+            </div>
+            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+              <div class="h-full bg-blue-500 rounded-full" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold">RxJS</span>
+              <span class="text-blue-400">80%</span>
+            </div>
+            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+              <div class="h-full bg-blue-500 rounded-full" style="width: 80%"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Tools & Technologies -->
-    <div class="mt-20">
-      <h3 class="text-2xl font-bold text-center mb-12 text-text">Tools & Technologies</h3>
-      <div class="flex flex-wrap justify-center gap-4">
-        <div *ngFor="let tool of tools"
-             class="bg-surface border border-border rounded-xl px-6 py-3 text-textSecondary hover:border-primary hover:text-primary transition-all duration-300 hover:scale-105">
-          {{tool}}
+      <!-- Backend Skills -->
+      <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl">
+        <div class="flex items-center mb-8">
+          <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4">
+            <span class="text-2xl">⚙️</span>
+          </div>
+          <h2 class="text-2xl font-bold">Backend</h2>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold">Node.js</span>
+              <span class="text-green-400">85%</span>
+            </div>
+            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+              <div class="h-full bg-green-500 rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold">Express.js</span>
+              <span class="text-green-400">80%</span>
+            </div>
+            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+              <div class="h-full bg-green-500 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold">MongoDB</span>
+              <span class="text-green-400">75%</span>
+            </div>
+            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+              <div class="h-full bg-green-500 rounded-full" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold">Firebase</span>
+              <span class="text-green-400">70%</span>
+            </div>
+            <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+              <div class="h-full bg-green-500 rounded-full" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Others -->
+      <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl md:col-span-2">
+        <div class="flex items-center mb-8">
+          <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+            <span class="text-2xl">🛠️</span>
+          </div>
+          <h2 class="text-2xl font-bold">Outils & Autres</h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-2xl">🐙</span>
+            </div>
+            <p class="font-semibold">Git/GitHub</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-2xl">🎯</span>
+            </div>
+            <p class="font-semibold">Jest</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-2xl">📱</span>
+            </div>
+            <p class="font-semibold">Responsive Design</p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-2xl">🚀</span>
+            </div>
+            <p class="font-semibold">CI/CD</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</div>

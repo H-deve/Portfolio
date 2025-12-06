@@ -1,84 +1,174 @@
-<section id="projects" class="section-padding bg-surface/50">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Featured Projects</h2>
-      <p class="text-xl text-textSecondary max-w-3xl mx-auto">
-        A showcase of my recent work and creative solutions
-      </p>
-    </div>
+<div class="min-h-screen bg-gray-900 text-white py-20">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-blue-400">
+      Mes Projets
+    </h1>
+    <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+      Découvrez une sélection de mes projets récents réalisés avec différentes technologies.
+    </p>
 
-    <div class="grid lg:grid-cols-2 gap-12">
-      <div *ngFor="let project of projects; let i = index"
-           class="card group hover:scale-[1.02] transition-all duration-500"
-           [class.lg:col-span-2]="i === 0">
-
-        <!-- Project Image -->
-        <div class="relative overflow-hidden rounded-xl mb-6">
-          <img
-            [src]="project.image"
-            [alt]="project.title"
-            class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <div class="flex space-x-3">
-              <a [href]="project.liveUrl"
-                 class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/80 transition-colors">
-                Live Demo
-              </a>
-              <a [href]="project.githubUrl"
-                 class="bg-surface text-text px-4 py-2 rounded-lg text-sm font-medium hover:bg-surface/80 transition-colors">
-                GitHub
-              </a>
-            </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Projet 1 -->
+      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
+        <div class="h-48 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-xl font-bold">Application E-commerce</h3>
+            <span class="bg-blue-500 text-xs px-3 py-1 rounded-full">Angular</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Plateforme e-commerce complète avec panier, paiement et administration.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Angular</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Firebase</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Stripe</span>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
+              Code Source →
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white font-semibold">
+              Live Demo →
+            </a>
           </div>
         </div>
+      </div>
 
-        <!-- Project Content -->
-        <div [class]="i === 0 ? 'lg:grid lg:grid-cols-2 lg:gap-8' : ''">
-          <div>
-            <h3 class="text-2xl font-bold mb-3 text-text group-hover:text-primary transition-colors">
-              {{project.title}}
-            </h3>
-            <p class="text-textSecondary mb-4 leading-relaxed">
-              {{project.description}}
-            </p>
+      <!-- Projet 2 -->
+      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
+        <div class="h-48 bg-gradient-to-r from-green-600 to-teal-600"></div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-xl font-bold">Dashboard Analytics</h3>
+            <span class="bg-green-500 text-xs px-3 py-1 rounded-full">React</span>
           </div>
+          <p class="text-gray-400 mb-6">
+            Tableau de bord interactif avec visualisation de données en temps réel.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">React</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">D3.js</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Node.js</span>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
+              Code Source →
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white font-semibold">
+              Live Demo →
+            </a>
+          </div>
+        </div>
+      </div>
 
-          <div>
-            <!-- Technologies -->
-            <div class="flex flex-wrap gap-2 mb-4">
-                  <span *ngFor="let tech of project.technologies"
-                        class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
-                    {{tech}}
-                  </span>
-            </div>
+      <!-- Projet 3 -->
+      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
+        <div class="h-48 bg-gradient-to-r from-purple-600 to-pink-600"></div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-xl font-bold">App Météo</h3>
+            <span class="bg-purple-500 text-xs px-3 py-1 rounded-full">Vue.js</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Application météo avec prévisions sur 7 jours et localisation automatique.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Vue.js</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">OpenWeather API</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">PWA</span>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
+              Code Source →
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white font-semibold">
+              Live Demo →
+            </a>
+          </div>
+        </div>
+      </div>
 
-            <!-- Features -->
-            <div class="space-y-2">
-              <h4 class="text-sm font-semibold text-text uppercase tracking-wide">Key Features</h4>
-              <ul class="space-y-1">
-                <li *ngFor="let feature of project.features"
-                    class="text-textSecondary text-sm flex items-center">
-                  <span class="w-1.5 h-1.5 bg-primary rounded-full mr-2"></span>
-                  {{feature}}
-                </li>
-              </ul>
-            </div>
+      <!-- Projet 4 -->
+      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
+        <div class="h-48 bg-gradient-to-r from-orange-600 to-red-600"></div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-xl font-bold">Réseau Social</h3>
+            <span class="bg-orange-500 text-xs px-3 py-1 rounded-full">MERN</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Plateforme sociale avec chat en temps réel et partage de contenu.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">MongoDB</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Express</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Socket.io</span>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
+              Code Source →
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white font-semibold">
+              Live Demo →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 5 -->
+      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
+        <div class="h-48 bg-gradient-to-r from-yellow-600 to-red-600"></div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-xl font-bold">Task Manager</h3>
+            <span class="bg-yellow-500 text-xs px-3 py-1 rounded-full">Full Stack</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Gestionnaire de tâches avec drag & drop, équipes et notifications.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Angular</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">NestJS</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">PostgreSQL</span>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
+              Code Source →
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white font-semibold">
+              Live Demo →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 6 -->
+      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
+        <div class="h-48 bg-gradient-to-r from-cyan-600 to-blue-600"></div>
+        <div class="p-6">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-xl font-bold">Portfolio</h3>
+            <span class="bg-cyan-500 text-xs px-3 py-1 rounded-full">Angular</span>
+          </div>
+          <p class="text-gray-400 mb-6">
+            Site portfolio responsive avec animations et dark mode.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Angular</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Tailwind CSS</span>
+            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">GSAP</span>
+          </div>
+          <div class="flex space-x-4">
+            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
+              Code Source →
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white font-semibold">
+              Live Demo →
+            </a>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- View More Projects -->
-    <div class="text-center mt-16">
-      <a href="https://github.com/alexmorgan"
-         class="btn-secondary inline-flex items-center">
-        <span>View All Projects</span>
-        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-        </svg>
-      </a>
-    </div>
   </div>
-</section>
+</div>
