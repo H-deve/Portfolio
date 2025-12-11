@@ -1,44 +1,53 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule} from '@angular/router';
-import {Navbar} from '../navbar/navbar';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterModule, Navbar],
+  imports: [CommonModule, RouterModule],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
 export class Header {
+
+  isMenuOpen = false;
   isScrolled = false;
-  isMobileMenuOpen = false;
-
-  navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
-    { label: 'Skills', href: '#skills' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Experience', href: '#experience' },
-    { label: 'Contact', href: '#contact' }
-  ];
-
-  get headerClasses(): string {
-    return this.isScrolled
-      ? 'bg-background/95 backdrop-blur-md border-b border-border'
-      : 'bg-transparent';
-  }
 
   @HostListener('window:scroll')
   onWindowScroll() {
-    this.isScrolled = window.pageYOffset > 50;
+    this.isScrolled = window.pageYOffset > 20;
   }
 
-  toggleMobileMenu() {
-    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+    // Prevent body scroll when menu is open
+    if (this.isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
   }
 
-  closeMobileMenu() {
-    this.isMobileMenuOpen = false;
+  closeMenu(): void {
+    this.isMenuOpen = false;
+    document.body.style.overflow = 'auto';
+  }
+
+  // Close menu when clicking outside on mobile
+  @HostListener('document:click', ['$event'])
+  onClick(event: Event): void {
+    const target = event.target as HTMLElement;
+    if (!target.closest('nav') && this.isMenuOpen) {
+      this.closeMenu();
+    }
+  }
+
+  // Close menu on escape key
+  @HostListener('document:keydown.escape')
+  onEscape(): void {
+    if (this.isMenuOpen) {
+      this.closeMenu();
+    }
   }
 }

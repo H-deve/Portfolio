@@ -1,372 +1,303 @@
 <div class="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
-  <!-- Hero Section -->
-  <section class="relative pt-24 pb-20 px-6">
-    <!-- Background elements -->
-    <div class="absolute inset-0 overflow-hidden">
-      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl"></div>
-    </div>
+  <!-- HERO -->
+  <section class="pt-24 pb-20 px-6 relative">
+    <div class="container mx-auto max-w-6xl">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
 
-    <div class="container mx-auto max-w-6xl relative z-10">
-      <div class="flex flex-col lg:flex-row items-center justify-between">
-        <!-- Left Content -->
-        <div class="lg:w-1/2 mb-12 lg:mb-0">
-          <div class="mb-6">
-            <span class="inline-flex items-center px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 text-sm font-semibold">
-              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-              </svg>
-              Bienvenue sur mon portfolio
-            </span>
-          </div>
+        <!-- LEFT SIDE TEXT -->
+        <div class="lg:w-1/2">
+          <span class="inline-block px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 text-sm font-semibold mb-4">
+            Concepteur Développeur d'Applications
+          </span>
 
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Je suis
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
-              [Votre Nom]
-            </span>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+           Hello , je suis Moatasm
+            <span class="block text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-500">Développeur Full Stack</span>
           </h1>
 
-          <h2 class="text-2xl md:text-3xl text-gray-300 mb-6">
-            <span class="typing-text"></span>
-            <span class="cursor">|</span>
-          </h2>
-
-          <p class="text-lg text-gray-400 mb-8 max-w-xl">
-            Passionné par le développement web, je crée des expériences digitales exceptionnelles
-            avec les dernières technologies. Spécialisé en Angular, TypeScript et architectures modernes.
+          <p class="text-gray-400 mb-8 max-w-lg">
+            Je conçois et développe des applications web modernes avec des architectures robustes.
+            Spécialisé en développement backend avec <strong>NestJS</strong> et en formation sur <strong>Spring Boot</strong>,
+            je crée des solutions techniques performantes et évolutives.
           </p>
 
-          <div class="flex flex-col sm:flex-row gap-4 mb-12">
-            <a routerLink="/projects"
-               class="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl font-semibold text-center transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/30">
-              <span class="relative z-10 flex items-center justify-center gap-2">
-                Explorer mes projets
-                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-                </svg>
-              </span>
-              <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </a>
-
-            <a routerLink="/contact"
-               class="group px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-xl font-semibold text-center transition-all duration-300 hover:bg-blue-500 hover:text-white hover:shadow-2xl hover:shadow-blue-500/20">
-              <span class="flex items-center justify-center gap-2">
-                Me contacter
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                </svg>
-              </span>
-            </a>
+          <div class="flex flex-wrap gap-3 mb-10">
+            <span class="px-3 py-1 bg-blue-800/30 border border-blue-700 rounded-lg">NestJS</span>
+            <span class="px-3 py-1 bg-green-800/30 border border-green-700 rounded-lg">Spring Boot</span>
+            <span class="px-3 py-1 bg-rose-800 border border-gray-700 rounded-lg">Angular</span>
+            <span class="px-3 py-1 bg-gray-800 border border-gray-700 rounded-lg">TypeScript</span>
+            <span class="px-3 py-1 bg-gray-800 border border-gray-700 rounded-lg">MySQL</span>
+            <span class="px-3 py-1 bg-gray-800 border border-gray-700 rounded-lg">Postgre</span>
+            <span class="px-3 py-1 bg-gray-800 border border-gray-700 rounded-lg">Docker</span>
           </div>
 
-          <!-- Stats -->
-          <div class="grid grid-cols-3 gap-4">
-            <div class="text-center">
-              <div class="text-3xl font-bold text-blue-400">4+</div>
-              <div class="text-sm text-gray-400">Années d'expérience</div>
-            </div>
-            <div class="text-center">
-              <div class="text-3xl font-bold text-green-400">50+</div>
-              <div class="text-sm text-gray-400">Projets réalisés</div>
-            </div>
-            <div class="text-center">
-              <div class="text-3xl font-bold text-purple-400">100%</div>
-              <div class="text-sm text-gray-400">Satisfaction client</div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#projets" class="px-8 py-4 bg-blue-600 rounded-xl font-semibold hover:bg-blue-700 transition duration-300">
+              Découvrir mes projets
+            </a>
+            <a routerLink="/contact" class="px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-xl font-semibold hover:bg-blue-500 hover:text-white transition duration-300">
+              Me contacter
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE SIMPLE AVATAR -->
+        <div class="lg:w-1/2 flex justify-center">
+          <div class="relative w-80 h-80">
+            <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900 border-4 border-gray-700 shadow-2xl flex items-center justify-center">
+              <div class="text-center p-8">
+                <div class="text-7xl mb-4 animate-pulse">👨‍💻</div>
+                <p class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-500">
+                  Développeur d'Applications
+                </p>
+                <p class="text-gray-400 mt-2">Architecture • Performance • Qualité</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Right Content (Image/Illustration) -->
-        <div class="lg:w-1/2 flex justify-center">
-          <div class="relative">
-            <!-- Floating animation container -->
-            <div class="relative w-80 h-80 md:w-96 md:h-96">
-              <!-- Outer ring -->
-              <div class="absolute inset-0 border-4 border-blue-500/20 rounded-full animate-spin-slow"></div>
+      </div>
+    </div>
+  </section>
 
-              <!-- Middle ring -->
-              <div class="absolute inset-8 border-4 border-purple-500/20 rounded-full animate-spin-slow-reverse"></div>
+  <!-- VALEURS -->
+  <section class="py-16 px-6 bg-gray-900/30">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Mon Approche du Développement</h2>
 
-              <!-- Main avatar -->
-              <div class="relative w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center overflow-hidden border-8 border-gray-900 shadow-2xl">
-                <!-- Remplacez par votre photo -->
-                <div class="text-center p-8">
-                  <div class="text-8xl mb-4 animate-float">👨‍💻</div>
-                  <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                    Full Stack Dev
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Floating tech badges -->
-            <div class="absolute -top-4 -left-4 bg-gray-800/80 backdrop-blur-sm border border-gray-700 rounded-2xl px-6 py-3 shadow-xl animate-float">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
-                  <span class="text-xl">⚡</span>
-                </div>
-                <div>
-                  <p class="font-bold text-white">Angular Expert</p>
-                  <p class="text-sm text-gray-400">4+ années</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="absolute -bottom-4 -right-4 bg-gray-800/80 backdrop-blur-sm border border-gray-700 rounded-2xl px-6 py-3 shadow-xl animate-float animation-delay-1000">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                  <span class="text-xl">🚀</span>
-                </div>
-                <div>
-                  <p class="font-bold text-white">Full Stack</p>
-                  <p class="text-sm text-gray-400">MERN Stack</p>
-                </div>
-              </div>
-            </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Valeur 1 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">🏗️</span>
           </div>
+          <h3 class="text-xl font-bold mb-3">Architecture Robustes</h3>
+          <p class="text-gray-400">
+            Conception d'applications avec des architectures modulaires, maintenables et évolutives
+          </p>
+        </div>
+
+        <!-- Valeur 2 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">⚡</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Code Qualitatif</h3>
+          <p class="text-gray-400">
+            Développement avec tests, revues de code et bonnes pratiques pour une qualité optimale
+          </p>
+        </div>
+
+        <!-- Valeur 3 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <span class="text-2xl">🔄</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Évolution Continue</h3>
+          <p class="text-gray-400">
+            Apprentissage constant des nouvelles technologies et amélioration des compétences
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="py-20 px-6 bg-gray-900/50">
+  <!-- PROJETS PHARES -->
+  <section id="projets" class="py-20 px-6">
     <div class="container mx-auto max-w-6xl">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Mes <span class="text-blue-400">Services</span>
-        </h2>
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Projets Concrets</h2>
         <p class="text-gray-400 max-w-2xl mx-auto">
-          Je propose des solutions complètes pour vos projets web, du design au déploiement.
+          Des applications développées avec rigueur et professionnalisme
         </p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Service 1 -->
-        <div class="group bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-blue-500/50 hover:transform hover:scale-105 transition-all duration-300">
-          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-            </svg>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Projet ERP -->
+        <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-700 hover:border-blue-500/50 transition-all duration-300">
+          <div class="h-48 bg-gradient-to-r from-blue-600 to-cyan-600 relative overflow-hidden">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+            <div class="absolute top-4 right-4">
+              <span class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Backend</span>
+            </div>
           </div>
-          <h3 class="text-xl font-bold mb-4">Développement Frontend</h3>
-          <p class="text-gray-400 mb-6">
-            Applications web modernes et réactives avec Angular, React ou Vue.js. Optimisation des performances et UX.
-          </p>
-          <ul class="space-y-2 text-gray-500">
-            <li class="flex items-center">
-              <svg class="w-4 h-4 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">ERP Bâtiment</h3>
+            <p class="text-gray-400 mb-4 text-sm">
+              Développement d'un système de gestion d'entreprise avec API NestJS, base de données MySQL et interface Angular.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">NestJS</span>
+              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">Angular</span>
+              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">MySQL</span>
+            </div>
+            <a routerLink="/projets/erp" class="text-blue-400 hover:text-blue-300 text-sm font-semibold inline-flex items-center">
+              En savoir plus
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
               </svg>
-              Applications Angular/React
-            </li>
-            <li class="flex items-center">
-              <svg class="w-4 h-4 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-              </svg>
-              Responsive Design
-            </li>
-            <li class="flex items-center">
-              <svg class="w-4 h-4 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-              </svg>
-              Optimisation SEO
-            </li>
-          </ul>
+            </a>
+          </div>
         </div>
 
-        <!-- Service 2 -->
-        <div class="group bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-green-500/50 hover:transform hover:scale-105 transition-all duration-300">
-          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
-            </svg>
+        <!-- Projet Covoiturage -->
+        <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-700 hover:border-green-500/50 transition-all duration-300">
+          <div class="h-48 bg-gradient-to-r from-green-600 to-emerald-600 relative overflow-hidden">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+            <div class="absolute top-4 right-4">
+              <span class="bg-green-500 text-white text-xs px-3 py-1 rounded-full">Full Stack</span>
+            </div>
           </div>
-          <h3 class="text-xl font-bold mb-4">Développement Backend</h3>
-          <p class="text-gray-400 mb-6">
-            API robustes et sécurisées avec Node.js, Express et bases de données modernes. Architecture microservices.
-          </p>
-          <ul class="space-y-2 text-gray-500">
-            <li class="flex items-center">
-              <svg class="w-4 h-4 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Application Covoiturage</h3>
+            <p class="text-gray-400 mb-4 text-sm">
+              Plateforme complète de covoiturage avec application mobile, authentification sécurisée et gestion des trajets.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">NestJS</span>
+              <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">Angular</span>
+              <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">MySQL</span>
+            </div>
+            <a routerLink="/projets/covoiturage" class="text-green-400 hover:text-green-300 text-sm font-semibold inline-flex items-center">
+              En savoir plus
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
               </svg>
-              API REST/GraphQL
-            </li>
-            <li class="flex items-center">
-              <svg class="w-4 h-4 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-              </svg>
-              Bases de données
-            </li>
-            <li class="flex items-center">
-              <svg class="w-4 h-4 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-              </svg>
-              Authentication JWT
-            </li>
-          </ul>
+            </a>
+          </div>
         </div>
 
-        <!-- Service 3 -->
-        <div class="group bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 hover:border-purple-500/50 hover:transform hover:scale-105 transition-all duration-300">
-          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-            </svg>
+        <!-- Projet Formation Spring -->
+        <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-700 hover:border-orange-500/50 transition-all duration-300">
+          <div class="h-48 bg-gradient-to-r from-orange-600 to-amber-600 relative overflow-hidden">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+            <div class="absolute top-4 right-4">
+              <span class="bg-orange-500 text-white text-xs px-3 py-1 rounded-full">Formation</span>
+            </div>
           </div>
-          <h3 class="text-xl font-bold mb-4">Solutions Complètes</h3>
-          <p class="text-gray-400 mb-6">
-            Développement full stack, hébergement, maintenance et support. De l'idée à la production.
-          </p>
-          <ul class="space-y-2 text-gray-500">
-            <li class="flex items-center">
-              <svg class="w-4 h-4 text-purple-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">Projets Spring Boot</h3>
+            <p class="text-gray-400 mb-4 text-sm">
+              Développement d'APIs avec Spring Boot dans le cadre de ma montée en compétences sur l'écosystème Java.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 text-xs rounded">Spring Boot</span>
+              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 text-xs rounded">Java</span>
+              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 text-xs rounded">MySQL</span>
+            </div>
+            <a routerLink="/projets/spring-boot" class="text-orange-400 hover:text-orange-300 text-sm font-semibold inline-flex items-center">
+              Voir les réalisations
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
               </svg>
-              Applications Full Stack
-            </li>
-            <li class="flex items-center">
-              <svg class="w-4 h-4 text-purple-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-              </svg>
-              Déploiement CI/CD
-            </li>
-            <li class="flex items-center">
-              <svg class="w-4 h-4 text-purple-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-              </svg>
-              Maintenance & Support
-            </li>
-          </ul>
+            </a>
+          </div>
         </div>
+
       </div>
-    </div>
-  </section>
 
-  <!-- Featured Projects Preview -->
-  <section class="py-20 px-6">
-    <div class="container mx-auto max-w-6xl">
-      <div class="flex flex-col md:flex-row justify-between items-end mb-12">
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Projets <span class="text-blue-400">Récents</span>
-          </h2>
-          <p class="text-gray-400 max-w-xl">
-            Découvrez une sélection de mes réalisations les plus significatives.
-          </p>
-        </div>
-        <a routerLink="/projects"
-           class="mt-4 md:mt-0 inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold group">
-          Voir tous les projets
-          <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div class="text-center mt-12">
+        <a routerLink="/projects" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold">
+          Voir tous mes projets
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
           </svg>
         </a>
       </div>
+    </div>
+  </section>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Project 1 -->
-        <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300">
-          <div class="h-48 bg-gradient-to-r from-blue-600 to-cyan-500 relative overflow-hidden">
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-            <div class="absolute top-4 right-4">
-              <span class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Angular</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">E-commerce Platform</h3>
-            <p class="text-gray-400 text-sm mb-4">
-              Plateforme e-commerce complète avec panier, paiement et dashboard admin.
-            </p>
-            <div class="flex justify-between items-center">
-              <a routerLink="/projects" class="text-blue-400 hover:text-blue-300 text-sm font-semibold group">
-                Voir les détails
-                <span class="inline-block group-hover:translate-x-1 transition-transform">→</span>
-              </a>
-              <div class="text-gray-500 text-sm">2023</div>
-            </div>
-          </div>
-        </div>
+  <!-- NAVIGATION VERS AUTRES PAGES -->
+  <section class="py-16 px-6 bg-gray-900/30">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold mb-12 text-center">Explorez Mon Profil</h2>
 
-        <!-- Project 2 -->
-        <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-300">
-          <div class="h-48 bg-gradient-to-r from-green-600 to-emerald-500 relative overflow-hidden">
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-            <div class="absolute top-4 right-4">
-              <span class="bg-green-500 text-white text-xs px-3 py-1 rounded-full">React</span>
-            </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Compétences -->
+        <a routerLink="/competences" class="group bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:scale-105">
+          <div class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition-colors">
+            <span class="text-2xl">💼</span>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">Analytics Dashboard</h3>
-            <p class="text-gray-400 text-sm mb-4">
-              Dashboard de données en temps réel avec visualisations interactives.
-            </p>
-            <div class="flex justify-between items-center">
-              <a routerLink="/projects" class="text-green-400 hover:text-green-300 text-sm font-semibold group">
-                Voir les détails
-                <span class="inline-block group-hover:translate-x-1 transition-transform">→</span>
-              </a>
-              <div class="text-gray-500 text-sm">2023</div>
-            </div>
-          </div>
-        </div>
+          <h3 class="text-xl font-bold mb-3">Mes Compétences</h3>
+          <p class="text-gray-400 mb-4">
+            Découvrez mon expertise technique détaillée et mon stack technologique complet
+          </p>
+          <span class="text-blue-400 group-hover:text-blue-300 text-sm font-semibold inline-flex items-center">
+            Explorer mes compétences
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </span>
+        </a>
 
-        <!-- Project 3 -->
-        <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300">
-          <div class="h-48 bg-gradient-to-r from-purple-600 to-pink-500 relative overflow-hidden">
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-            <div class="absolute top-4 right-4">
-              <span class="bg-purple-500 text-white text-xs px-3 py-1 rounded-full">Vue.js</span>
-            </div>
+        <!-- Expériences -->
+        <a routerLink="/about" class="group bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-green-500 transition-all duration-300 hover:scale-105">
+          <div class="w-14 h-14 bg-green-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-500/30 transition-colors">
+            <span class="text-2xl">📈</span>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2">Task Management App</h3>
-            <p class="text-gray-400 text-sm mb-4">
-              Application de gestion de tâches collaborative avec chat en temps réel.
-            </p>
-            <div class="flex justify-between items-center">
-              <a routerLink="/projects" class="text-purple-400 hover:text-purple-300 text-sm font-semibold group">
-                Voir les détails
-                <span class="inline-block group-hover:translate-x-1 transition-transform">→</span>
-              </a>
-              <div class="text-gray-500 text-sm">2024</div>
-            </div>
+          <h3 class="text-xl font-bold mb-3">Mon Parcours</h3>
+          <p class="text-gray-400 mb-4">
+            Retracez mon parcours professionnel, mes formations et mes réalisations
+          </p>
+          <span class="text-green-400 group-hover:text-green-300 text-sm font-semibold inline-flex items-center">
+            Voir mon parcours
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Contact -->
+        <a routerLink="/contact" class="group bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
+          <div class="w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-500/30 transition-colors">
+            <span class="text-2xl">✉️</span>
           </div>
-        </div>
+          <h3 class="text-xl font-bold mb-3">Contactez-moi</h3>
+          <p class="text-gray-400 mb-4">
+            Discutons de votre projet ou d'opportunités professionnelles
+          </p>
+          <span class="text-purple-400 group-hover:text-purple-300 text-sm font-semibold inline-flex items-center">
+            Me contacter
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
+  <!-- CTA FINAL -->
   <section class="py-20 px-6">
-    <div class="container mx-auto max-w-4xl">
-      <div class="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-3xl p-12 text-center relative overflow-hidden">
-        <!-- Background pattern -->
-        <div class="absolute inset-0 opacity-10">
-          <div class="absolute top-0 left-0 w-32 h-32 bg-blue-500 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-          <div class="absolute bottom-0 right-0 w-32 h-32 bg-purple-500 rounded-full translate-x-1/2 translate-y-1/2"></div>
+    <div class="container mx-auto max-w-3xl">
+      <div class="text-center bg-gradient-to-r from-blue-900/20 to-green-900/20 py-16 rounded-3xl border border-blue-500/30 px-6">
+        <h2 class="text-3xl font-bold mb-4">Recherche active d'emploi</h2>
+        <p class="max-w-2xl mx-auto text-gray-300 mb-8">
+          Actuellement en recherche d'un poste de <strong>Développeur Full Stack Junior/Mid-Level</strong>.
+          Spécialisé en backend avec NestJS et en montée en compétences sur Spring Boot.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="mailto:moatasm@email.com"
+             class="px-8 py-4 bg-gradient-to-r from-blue-500 to-green-500 rounded-xl font-semibold hover:from-blue-600 hover:to-green-600 transition duration-300">
+            Me contacter pour un entretien
+          </a>
+          <a href="/assets/cv/cv.pdf" download
+             class="px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-xl font-semibold hover:bg-blue-500 hover:text-white transition duration-300">
+            Télécharger mon CV
+          </a>
         </div>
-
-        <div class="relative z-10">
-          <h2 class="text-3xl md:text-4xl font-bold mb-6">
-            Prêt à concrétiser votre projet ?
-          </h2>
-          <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Discutons de votre idée et créons ensemble quelque chose d'exceptionnel.
+        <div class="mt-8 pt-6 border-t border-gray-700">
+          <p class="text-gray-400 text-sm">
+          <span class="inline-flex items-center mr-4">
+            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+            Disponible immédiatement
+          </span>
+            <span class="inline-flex items-center">
+            <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+            Remote/Hybride possible
+          </span>
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a routerLink="/contact"
-               class="px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/30">
-              Démarrer un projet
-            </a>
-            <a href="mailto:contact@example.com"
-               class="px-8 py-4 border-2 border-blue-500 text-blue-400 font-semibold rounded-xl hover:bg-blue-500 hover:text-white transition-all duration-300">
-              contact&#64;example.com
-            </a>
-          </div>
         </div>
       </div>
     </div>
