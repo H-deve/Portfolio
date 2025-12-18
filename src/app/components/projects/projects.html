@@ -1,173 +1,409 @@
-<div class="min-h-screen bg-gray-900 text-white py-20">
+<div class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white py-20 transition-colors duration-300">
   <div class="container mx-auto px-6 max-w-6xl">
-    <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-blue-400">
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-blue-600 dark:text-blue-400">
       Mes Projets
     </h1>
-    <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-      Découvrez une sélection de mes projets récents réalisés avec différentes technologies.
+    <p class="text-gray-600 dark:text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+      Découvrez mes projets personnels et académiques réalisés avec différentes technologies.
     </p>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Projet 1 -->
-      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-blue-600 to-purple-600"></div>
+      <!-- Projet 1 - Covoiturage Full Stack -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 border border-gray-200 dark:border-gray-700">
+        <div class="h-48 bg-gradient-to-r from-green-600 to-emerald-600 flex items-center justify-center">
+          <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </div>
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <h3 class="text-xl font-bold">Application E-commerce</h3>
-            <span class="bg-blue-500 text-xs px-3 py-1 rounded-full">Angular</span>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white">Covoiturage App</h3>
+            <span class="bg-gradient-to-r from-green-500 to-emerald-500 text-white text-xs px-3 py-1 rounded-full">Full Stack</span>
           </div>
-          <p class="text-gray-400 mb-6">
-            Plateforme e-commerce complète avec panier, paiement et administration.
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            Application complète de covoiturage avec API backend, interface web et application mobile.
           </p>
           <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Angular</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Firebase</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Stripe</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">NestJS</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">Angular</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">Capacitor</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">MySQL</span>
           </div>
           <div class="flex space-x-4">
-            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
+            <a href="https://github.com/H-deve/coviturage-monorepo" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 font-semibold">
               Code Source →
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white font-semibold">
-              Live Demo →
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Projet 2 -->
-      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-green-600 to-teal-600"></div>
+      <!-- Projet 2 - CampingCarFinder -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 border border-gray-200 dark:border-gray-700">
+        <div class="h-48 bg-gradient-to-r from-blue-600 to-cyan-600 flex items-center justify-center">
+          <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <h3 class="text-xl font-bold">Dashboard Analytics</h3>
-            <span class="bg-green-500 text-xs px-3 py-1 rounded-full">React</span>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white">CampingCarFinder</h3>
+            <span class="bg-blue-600 dark:bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Full Stack</span>
           </div>
-          <p class="text-gray-400 mb-6">
-            Tableau de bord interactif avec visualisation de données en temps réel.
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            Plateforme complète de recherche et gestion d'annonces de camping-cars et vans aménagés.
           </p>
           <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">React</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">D3.js</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Node.js</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">Java</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">Spring Boot</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">Angular</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">MySQL</span>
           </div>
           <div class="flex space-x-4">
-            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
+            <a href="https://github.com/H-deve/web-scraping" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 font-semibold">
               Code Source →
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white font-semibold">
-              Live Demo →
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Projet 3 -->
-      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-purple-600 to-pink-600"></div>
+      <!-- Projet 3 - Stock Management -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 border border-gray-200 dark:border-gray-700">
+        <div class="h-48 bg-gradient-to-r from-purple-600 to-indigo-600 flex items-center justify-center">
+          <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          </svg>
+        </div>
         <div class="p-6">
           <div class="flex justify-between items-start mb-4">
-            <h3 class="text-xl font-bold">App Météo</h3>
-            <span class="bg-purple-500 text-xs px-3 py-1 rounded-full">Vue.js</span>
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white">Stock Management</h3>
+            <span class="bg-purple-600 dark:bg-purple-500 text-white text-xs px-3 py-1 rounded-full">Desktop Application</span>
           </div>
-          <p class="text-gray-400 mb-6">
-            Application météo avec prévisions sur 7 jours et localisation automatique.
+          <p class="text-gray-600 dark:text-gray-400 mb-6">
+            Application desktop complète de gestion de stocks, produits et commandes pour e-commerce.
           </p>
           <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Vue.js</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">OpenWeather API</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">PWA</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">Java</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">Swing</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">MySQL</span>
+            <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 text-xs px-3 py-1 rounded">JDBC</span>
           </div>
           <div class="flex space-x-4">
-            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
+            <a href="https://github.com/H-deve/Stock-Manegment" target="_blank" class="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 font-semibold">
               Code Source →
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white font-semibold">
-              Live Demo →
             </a>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Projet 4 -->
-      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-orange-600 to-red-600"></div>
-        <div class="p-6">
-          <div class="flex justify-between items-start mb-4">
-            <h3 class="text-xl font-bold">Réseau Social</h3>
-            <span class="bg-orange-500 text-xs px-3 py-1 rounded-full">MERN</span>
+    <!-- Section détaillée pour Stock Management -->
+    <div id="stock-details" class="hidden mt-16 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden project-details shadow-lg">
+      <div class="p-8">
+        <div class="flex items-center mb-6">
+          <div class="w-12 h-12 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg flex items-center justify-center mr-4">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
           </div>
-          <p class="text-gray-400 mb-6">
-            Plateforme sociale avec chat en temps réel et partage de contenu.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">MongoDB</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Express</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Socket.io</span>
+          <div class="flex-1">
+            <h2 class="text-2xl font-bold text-gray-800 dark:text-white">Stock Management - Système de Gestion</h2>
+            <p class="text-gray-600 dark:text-gray-400">Application complète pour la gestion de stocks, produits et commandes e-commerce</p>
           </div>
-          <div class="flex space-x-4">
-            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
-              Code Source →
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white font-semibold">
-              Live Demo →
-            </a>
+          <button class="ml-4 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white close-details">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <h3 class="text-lg font-bold mb-4 text-purple-600 dark:text-purple-300">🎯 Objectif du Projet</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-4">
+              Développer un système complet de gestion de stocks pour un site e-commerce, permettant
+              un suivi efficace des articles en inventaire, des produits et des transactions.
+            </p>
+            <p class="text-gray-700 dark:text-gray-300">
+              L'application fournit une solution intégrée pour automatiser les processus de gestion
+              d'inventaire et optimiser les opérations commerciales.
+            </p>
           </div>
+
+          <div>
+            <h3 class="text-lg font-bold mb-4 text-blue-600 dark:text-blue-300">🏢 Contexte</h3>
+            <ul class="text-gray-700 dark:text-gray-300 space-y-2">
+              <li class="flex items-start">
+                <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                <span>Projet académique avec spécifications complètes</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                <span>Documentation technique détaillée</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                <span>Architecture modulaire et scalable</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                <span>Conformité aux standards industriels</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Architecture -->
+        <div class="mb-10">
+          <h3 class="text-xl font-bold mb-6 text-indigo-600 dark:text-indigo-300 border-l-4 border-indigo-500 pl-3">
+            🏗️ Architecture et Technologies
+          </h3>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-gray-100 dark:bg-gray-700/30 rounded-xl p-6">
+              <h4 class="font-bold mb-4 text-gray-800 dark:text-gray-200">✨ Stack Technique</h4>
+
+              <div class="space-y-4">
+                <div>
+                  <h5 class="font-semibold mb-2 text-gray-800 dark:text-gray-200">Backend</h5>
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-orange-100 dark:bg-orange-600/20 text-orange-800 dark:text-orange-300 text-xs px-3 py-1 rounded">Java</span>
+                    <span class="bg-green-100 dark:bg-green-600/20 text-green-800 dark:text-green-300 text-xs px-3 py-1 rounded">Spring Boot</span>
+                    <span class="bg-blue-100 dark:bg-blue-600/20 text-blue-800 dark:text-blue-300 text-xs px-3 py-1 rounded">Spring Data JPA</span>
+                    <span class="bg-purple-100 dark:bg-purple-600/20 text-purple-800 dark:text-purple-300 text-xs px-3 py-1 rounded">Spring Security</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h5 class="font-semibold mb-2 text-gray-800 dark:text-gray-200">Frontend</h5>
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-red-100 dark:bg-red-600/20 text-red-800 dark:text-red-300 text-xs px-3 py-1 rounded">Angular</span>
+                    <span class="bg-blue-100 dark:bg-blue-500/20 text-blue-800 dark:text-blue-300 text-xs px-3 py-1 rounded">TypeScript</span>
+                    <span class="bg-cyan-100 dark:bg-cyan-500/20 text-cyan-800 dark:text-cyan-300 text-xs px-3 py-1 rounded">Angular Material</span>
+                    <span class="bg-purple-100 dark:bg-purple-500/20 text-purple-800 dark:text-purple-300 text-xs px-3 py-1 rounded">RxJS</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h5 class="font-semibold mb-2 text-gray-800 dark:text-gray-200">Base de données</h5>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 dark:bg-blue-600/20 text-blue-800 dark:text-blue-300 text-xs px-3 py-1 rounded">MySQL</span>
+                    <span class="bg-green-100 dark:bg-green-500/20 text-green-800 dark:text-green-300 text-xs px-3 py-1 rounded">Hibernate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-gray-100 dark:bg-gray-700/30 rounded-xl p-6">
+              <h4 class="font-bold mb-4 text-gray-800 dark:text-gray-200">📊 Fonctionnalités Spécifiques</h4>
+
+              <div class="space-y-4">
+                <div>
+                  <h5 class="font-semibold mb-2 text-gray-800 dark:text-gray-200">Reporting</h5>
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-yellow-100 dark:bg-yellow-600/20 text-yellow-800 dark:text-yellow-300 text-xs px-3 py-1 rounded">JasperReports</span>
+                    <span class="bg-blue-100 dark:bg-blue-700/20 text-blue-800 dark:text-blue-300 text-xs px-3 py-1 rounded">PDF Export</span>
+                    <span class="bg-green-100 dark:bg-green-600/20 text-green-800 dark:text-green-300 text-xs px-3 py-1 rounded">Excel Export</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h5 class="font-semibold mb-2 text-gray-800 dark:text-gray-200">Algorithmes</h5>
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="bg-purple-100 dark:bg-purple-600/20 text-purple-800 dark:text-purple-300 text-xs px-3 py-1 rounded">Gestion de stocks FIFO/LIFO</span>
+                    <span class="bg-pink-100 dark:bg-pink-600/20 text-pink-800 dark:text-pink-300 text-xs px-3 py-1 rounded">Calculs de réapprovisionnement</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h5 class="font-semibold mb-2 text-gray-800 dark:text-gray-200">Sécurité</h5>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-red-100 dark:bg-red-500/20 text-red-800 dark:text-red-300 text-xs px-3 py-1 rounded">Spring Security</span>
+                    <span class="bg-yellow-100 dark:bg-yellow-500/20 text-yellow-800 dark:text-yellow-300 text-xs px-3 py-1 rounded">JWT Authentication</span>
+                    <span class="bg-blue-100 dark:bg-blue-500/20 text-blue-800 dark:text-blue-300 text-xs px-3 py-1 rounded">RBAC (Rôles)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modèle de données -->
+        <div class="mb-8 p-6 bg-gray-100 dark:bg-gray-700/20 rounded-xl border border-gray-300 dark:border-gray-600">
+          <h4 class="text-lg font-bold mb-4 text-blue-600 dark:text-blue-300">🗄️ Modèle de Données</h4>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="w-12 h-12 bg-blue-100 dark:bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </div>
+              <h5 class="font-bold text-gray-800 dark:text-gray-200 mb-2">Entités Principales</h5>
+              <p class="text-gray-700 dark:text-gray-300 text-sm">Produits, Stocks, Catégories, Fournisseurs</p>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 bg-green-100 dark:bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <h5 class="font-bold text-gray-800 dark:text-gray-200 mb-2">Transactions</h5>
+              <p class="text-gray-700 dark:text-gray-300 text-sm">Commandes, Entrées/Sorties, Mouvements</p>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 bg-purple-100 dark:bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                <svg class="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h5 class="font-bold text-gray-800 dark:text-gray-200 mb-2">Reporting</h5>
+              <p class="text-gray-700 dark:text-gray-300 text-sm">Statistiques, Historique, Alertes</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fonctionnalités détaillées -->
+        <div class="mb-8">
+          <h3 class="text-xl font-bold mb-6 text-green-600 dark:text-green-300 border-l-4 border-green-500 pl-3">
+            ✨ Fonctionnalités Détaillées
+          </h3>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="space-y-4">
+              <div class="bg-gray-100 dark:bg-gray-700/30 rounded-lg p-4">
+                <h5 class="font-bold mb-2 text-gray-800 dark:text-gray-200">📦 Gestion des Produits</h5>
+                <ul class="text-gray-700 dark:text-gray-300 text-sm space-y-1">
+                  <li>• Création et édition de produits</li>
+                  <li>• Gestion des catégories et sous-catégories</li>
+                  <li>• Attributs personnalisés par produit</li>
+                  <li>• Images et descriptions détaillées</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-100 dark:bg-gray-700/30 rounded-lg p-4">
+                <h5 class="font-bold mb-2 text-gray-800 dark:text-gray-200">📊 Suivi des Stocks</h5>
+                <ul class="text-gray-700 dark:text-gray-300 text-sm space-y-1">
+                  <li>• Niveaux de stock en temps réel</li>
+                  <li>• Alertes de seuil minimum/maximum</li>
+                  <li>• Historique des mouvements</li>
+                  <li>• Valeur totale d'inventaire</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="bg-gray-100 dark:bg-gray-700/30 rounded-lg p-4">
+                <h5 class="font-bold mb-2 text-gray-800 dark:text-gray-200">🛒 Gestion des Commandes</h5>
+                <ul class="text-gray-700 dark:text-gray-300 text-sm space-y-1">
+                  <li>• Création et traitement de commandes</li>
+                  <li>• Workflow d'approbation</li>
+                  <li>• Suivi du statut des commandes</li>
+                  <li>• Facturation et documents</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-100 dark:bg-gray-700/30 rounded-lg p-4">
+                <h5 class="font-bold mb-2 text-gray-800 dark:text-gray-200">📈 Reporting Avancé</h5>
+                <ul class="text-gray-700 dark:text-gray-300 text-sm space-y-1">
+                  <li>• Rapports personnalisables</li>
+                  <li>• Export PDF/Excel avec JasperReports</li>
+                  <li>• Tableaux de bord analytiques</li>
+                  <li>• Statistiques de vente</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Algorithmes et logique métier -->
+        <div class="mb-8 p-6 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-700/30 dark:to-gray-800/30 rounded-xl border border-gray-300 dark:border-gray-600">
+          <h4 class="font-bold mb-4 text-purple-600 dark:text-purple-300">⚙️ Algorithmes et Logique Métier</h4>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h5 class="font-semibold mb-2 text-gray-800 dark:text-gray-200">🧮 Gestion de Stocks</h5>
+              <ul class="text-gray-700 dark:text-gray-300 text-sm space-y-2">
+                <li>• Calcul des coûts FIFO (First In, First Out)</li>
+                <li>• Méthodes de valorisation LIFO (Last In, First Out)</li>
+                <li>• Calcul du point de réapprovisionnement</li>
+                <li>• Optimisation des niveaux de stock</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-semibold mb-2 text-gray-800 dark:text-gray-200">📋 Processus Automatisés</h5>
+              <ul class="text-gray-700 dark:text-gray-300 text-sm space-y-2">
+                <li>• Génération automatique de commandes</li>
+                <li>• Alertes de stock critique</li>
+                <li>• Calcul des marges bénéficiaires</li>
+                <li>• Prévisions de demande</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compétences développées -->
+        <div class="mt-10 p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-300 dark:border-gray-600">
+          <h4 class="font-bold mb-4 text-blue-600 dark:text-blue-300">💡 Compétences Développées</h4>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h5 class="font-semibold mb-2 text-gray-800 dark:text-gray-200">📈 Développement Backend</h5>
+              <ul class="text-gray-700 dark:text-gray-300 text-sm space-y-2">
+                <li>• Architecture Spring Boot avancée</li>
+                <li>• Conception de modèles de données complexes</li>
+                <li>• Implémentation d'algorithmes métier</li>
+                <li>• Intégration JasperReports pour le reporting</li>
+                <li>• Sécurité avec Spring Security</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="font-semibold mb-2 text-gray-800 dark:text-gray-200">🎨 Développement Frontend</h5>
+              <ul class="text-gray-700 dark:text-gray-300 text-sm space-y-2">
+                <li>• Interface Angular avec Material Design</li>
+                <li>• Tableaux de bord interactifs</li>
+                <li>• Gestion d'état avec RxJS</li>
+                <li>• Composants réutilisables</li>
+                <li>• UX/UI pour applications métier</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boutons d'action -->
+        <div class="flex flex-wrap gap-4 mt-8 pt-6 border-t border-gray-300 dark:border-gray-700">
+          <a href="#" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition duration-300">
+            📂 Code Source
+          </a>
+          <a href="#" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300">
+            📚 Documentation Technique
+          </a>
+          <a href="#" class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition duration-300">
+            📊 Rapports Exemple
+          </a>
+          <button class="px-6 py-3 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white font-semibold rounded-lg transition duration-300 close-details">
+            ✕ Fermer
+          </button>
         </div>
       </div>
+    </div>
 
-      <!-- Projet 5 -->
-      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-yellow-600 to-red-600"></div>
-        <div class="p-6">
-          <div class="flex justify-between items-start mb-4">
-            <h3 class="text-xl font-bold">Task Manager</h3>
-            <span class="bg-yellow-500 text-xs px-3 py-1 rounded-full">Full Stack</span>
-          </div>
-          <p class="text-gray-400 mb-6">
-            Gestionnaire de tâches avec drag & drop, équipes et notifications.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Angular</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">NestJS</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">PostgreSQL</span>
-          </div>
-          <div class="flex space-x-4">
-            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
-              Code Source →
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white font-semibold">
-              Live Demo →
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projet 6 -->
-      <div class="bg-gray-800 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-300">
-        <div class="h-48 bg-gradient-to-r from-cyan-600 to-blue-600"></div>
-        <div class="p-6">
-          <div class="flex justify-between items-start mb-4">
-            <h3 class="text-xl font-bold">Portfolio</h3>
-            <span class="bg-cyan-500 text-xs px-3 py-1 rounded-full">Angular</span>
-          </div>
-          <p class="text-gray-400 mb-6">
-            Site portfolio responsive avec animations et dark mode.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Angular</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">Tailwind CSS</span>
-            <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded">GSAP</span>
-          </div>
-          <div class="flex space-x-4">
-            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">
-              Code Source →
-            </a>
-            <a href="#" class="text-gray-400 hover:text-white font-semibold">
-              Live Demo →
-            </a>
-          </div>
-        </div>
+    <!-- Note sur les projets -->
+    <div class="mt-16 p-6 bg-gray-100 dark:bg-gray-800/50 rounded-2xl border border-gray-300 dark:border-gray-700 max-w-3xl mx-auto">
+      <h3 class="text-lg font-bold mb-3 text-blue-600 dark:text-blue-300">À propos de mes projets</h3>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        Mes projets démontrent ma capacité à développer des applications métier complexes avec
+        une architecture solide, des algorithmes optimisés et une documentation technique complète.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-4">
+        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-500/10 text-purple-800 dark:text-purple-300 rounded-full border border-purple-300 dark:border-purple-500/30 text-sm">
+          Systèmes de Gestion
+        </span>
+        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-500/10 text-blue-800 dark:text-blue-300 rounded-full border border-blue-300 dark:border-blue-500/30 text-sm">
+          Algorithmes Métier
+        </span>
+        <span class="px-3 py-1 bg-green-100 dark:bg-green-500/10 text-green-800 dark:text-green-300 rounded-full border border-green-300 dark:border-green-500/30 text-sm">
+          Reporting
+        </span>
+        <span class="px-3 py-1 bg-red-100 dark:bg-red-500/10 text-red-800 dark:text-red-300 rounded-full border border-red-300 dark:border-red-500/30 text-sm">
+          Spring Boot Avancé
+        </span>
       </div>
     </div>
   </div>

@@ -1,4 +1,7 @@
-<div class="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white overflow-hidden">
+<div class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100
+            dark:from-gray-900 dark:via-black dark:to-gray-900
+            text-gray-900 dark:text-white transition-colors duration-300">
+
   <!-- HERO -->
   <section class="pt-24 pb-20 px-6 relative">
     <div class="container mx-auto max-w-6xl">
@@ -6,36 +9,34 @@
 
         <!-- LEFT SIDE TEXT -->
         <div class="lg:w-1/2">
-          <span class="inline-block px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 text-sm font-semibold mb-4">
+          <span class="inline-block px-4 py-2 bg-blue-100 dark:bg-blue-500/20 border border-blue-300 dark:border-blue-500/30 rounded-full text-blue-700 dark:text-blue-300 text-sm font-semibold mb-4">
             Concepteur Développeur d'Applications
           </span>
 
-          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-           Hello , je suis Moatasm
-            <span class="block text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-500">Développeur Full Stack</span>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 text-gray-800 dark:text-white">
+            Hello , je suis Moatasm
           </h1>
 
-          <p class="text-gray-400 mb-8 max-w-lg">
-            Je conçois et développe des applications web modernes avec des architectures robustes.
-            Spécialisé en développement backend avec <strong>NestJS</strong> et en formation sur <strong>Spring Boot</strong>,
-            je crée des solutions techniques performantes et évolutives.
+          <p class="text-gray-600 dark:text-gray-400 mb-8 max-w-lg">
+            Développeur  full-stack , je me spécialise dans la création d'applications web et logicielles. Après une première expérience avec <span class="font-bold text-red-600 dark:text-red-700">NestJS</span>, je me forme actuellement à <span class="font-bold text-green-600 dark:text-green-500">Spring boot</span> pour concevoir des solutions complètes et performantes
           </p>
 
           <div class="flex flex-wrap gap-3 mb-10">
-            <span class="px-3 py-1 bg-blue-800/30 border border-blue-700 rounded-lg">NestJS</span>
-            <span class="px-3 py-1 bg-green-800/30 border border-green-700 rounded-lg">Spring Boot</span>
-            <span class="px-3 py-1 bg-rose-800 border border-gray-700 rounded-lg">Angular</span>
-            <span class="px-3 py-1 bg-gray-800 border border-gray-700 rounded-lg">TypeScript</span>
-            <span class="px-3 py-1 bg-gray-800 border border-gray-700 rounded-lg">MySQL</span>
-            <span class="px-3 py-1 bg-gray-800 border border-gray-700 rounded-lg">Postgre</span>
-            <span class="px-3 py-1 bg-gray-800 border border-gray-700 rounded-lg">Docker</span>
+            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-800/30 border border-blue-300 dark:border-blue-700 rounded-lg text-blue-800 dark:text-blue-300">NestJS</span>
+            <span class="px-3 py-1 bg-green-100 dark:bg-green-800/30 border border-green-300 dark:border-green-700 rounded-lg text-green-800 dark:text-green-300">Spring Boot -Java</span>
+            <span class="px-3 py-1 bg-red-100 dark:bg-rose-800 border border-red-300 dark:border-gray-700 rounded-lg text-red-800 dark:text-red-300">Angular</span>
+            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-500 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-800 dark:text-gray-300">API Rest</span>
+            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-800 dark:text-gray-300">TypeScript</span>
+            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-800 dark:text-gray-300">MySQL</span>
+            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-800 dark:text-gray-300">PostgreSQL</span>
+            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg text-gray-800 dark:text-gray-300">Docker</span>
           </div>
 
           <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#projets" class="px-8 py-4 bg-blue-600 rounded-xl font-semibold hover:bg-blue-700 transition duration-300">
+            <a href="/projects" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 rounded-xl font-semibold text-white transition duration-300">
               Découvrir mes projets
             </a>
-            <a routerLink="/contact" class="px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-xl font-semibold hover:bg-blue-500 hover:text-white transition duration-300">
+            <a routerLink="/contact" class="px-8 py-4 border-2 border-blue-500 text-blue-600 dark:text-blue-400 rounded-xl font-semibold hover:bg-blue-500 hover:text-white dark:hover:bg-blue-500 dark:hover:text-white transition duration-300">
               Me contacter
             </a>
           </div>
@@ -44,13 +45,13 @@
         <!-- RIGHT SIDE SIMPLE AVATAR -->
         <div class="lg:w-1/2 flex justify-center">
           <div class="relative w-80 h-80">
-            <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900 border-4 border-gray-700 shadow-2xl flex items-center justify-center">
+            <div class="absolute inset-0 rounded-3xl bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-900 border-4 border-gray-300 dark:border-gray-700 shadow-2xl flex items-center justify-center">
               <div class="text-center p-8">
                 <div class="text-7xl mb-4 animate-pulse">👨‍💻</div>
-                <p class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-500">
-                  Développeur d'Applications
+                <p class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-600 dark:from-blue-400 dark:to-green-500">
+                  Consepteur Développeur d'Applications
                 </p>
-                <p class="text-gray-400 mt-2">Architecture • Performance • Qualité</p>
+                <p class="text-gray-600 dark:text-gray-400 mt-2">Architecture • Performance • Qualité</p>
               </div>
             </div>
           </div>
@@ -61,40 +62,40 @@
   </section>
 
   <!-- VALEURS -->
-  <section class="py-16 px-6 bg-gray-900/30">
+  <section class="py-16 px-6 bg-gray-100/50 dark:bg-gray-900/30">
     <div class="container mx-auto max-w-6xl">
-      <h2 class="text-3xl font-bold mb-12 text-center">Mon Approche du Développement</h2>
+      <h2 class="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">Mon Approche du Développement</h2>
 
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Valeur 1 -->
         <div class="text-center">
-          <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <div class="w-16 h-16 bg-blue-100 dark:bg-blue-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
             <span class="text-2xl">🏗️</span>
           </div>
-          <h3 class="text-xl font-bold mb-3">Architecture Robustes</h3>
-          <p class="text-gray-400">
+          <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Architecture Robustes</h3>
+          <p class="text-gray-600 dark:text-gray-400">
             Conception d'applications avec des architectures modulaires, maintenables et évolutives
           </p>
         </div>
 
         <!-- Valeur 2 -->
         <div class="text-center">
-          <div class="w-16 h-16 bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <div class="w-16 h-16 bg-green-100 dark:bg-green-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
             <span class="text-2xl">⚡</span>
           </div>
-          <h3 class="text-xl font-bold mb-3">Code Qualitatif</h3>
-          <p class="text-gray-400">
+          <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Code Qualitatif</h3>
+          <p class="text-gray-600 dark:text-gray-400">
             Développement avec tests, revues de code et bonnes pratiques pour une qualité optimale
           </p>
         </div>
 
         <!-- Valeur 3 -->
         <div class="text-center">
-          <div class="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <div class="w-16 h-16 bg-purple-100 dark:bg-purple-500/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
             <span class="text-2xl">🔄</span>
           </div>
-          <h3 class="text-xl font-bold mb-3">Évolution Continue</h3>
-          <p class="text-gray-400">
+          <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Évolution Continue</h3>
+          <p class="text-gray-600 dark:text-gray-400">
             Apprentissage constant des nouvelles technologies et amélioration des compétences
           </p>
         </div>
@@ -102,168 +103,160 @@
     </div>
   </section>
 
-  <!-- PROJETS PHARES -->
-  <section id="projets" class="py-20 px-6">
+  <!-- NAVIGATION VERS AUTRES PAGES -->
+  <section class="py-16 px-6 bg-gray-100/50 dark:bg-gray-900/30">
     <div class="container mx-auto max-w-6xl">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-bold mb-4">Projets Concrets</h2>
-        <p class="text-gray-400 max-w-2xl mx-auto">
-          Des applications développées avec rigueur et professionnalisme
-        </p>
-      </div>
+      <h2 class="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">Explorez Mon Profil</h2>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <!-- Projet ERP -->
-        <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-700 hover:border-blue-500/50 transition-all duration-300">
-          <div class="h-48 bg-gradient-to-r from-blue-600 to-cyan-600 relative overflow-hidden">
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-            <div class="absolute top-4 right-4">
-              <span class="bg-blue-500 text-white text-xs px-3 py-1 rounded-full">Backend</span>
-            </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Compétences -->
+        <a routerLink="/competences" class="group bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-300 dark:border-gray-700 hover:border-blue-500 transition-all duration-300 hover:scale-105 shadow-lg">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 dark:group-hover:bg-blue-500/30 transition-colors">
+            <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
           </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3">ERP Bâtiment</h3>
-            <p class="text-gray-400 mb-4 text-sm">
-              Développement d'un système de gestion d'entreprise avec API NestJS, base de données MySQL et interface Angular.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">NestJS</span>
-              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">Angular</span>
-              <span class="px-2 py-1 bg-blue-500/20 text-blue-300 text-xs rounded">MySQL</span>
-            </div>
-            <a routerLink="/projets/erp" class="text-blue-400 hover:text-blue-300 text-sm font-semibold inline-flex items-center">
-              En savoir plus
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Projet Covoiturage -->
-        <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-700 hover:border-green-500/50 transition-all duration-300">
-          <div class="h-48 bg-gradient-to-r from-green-600 to-emerald-600 relative overflow-hidden">
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-            <div class="absolute top-4 right-4">
-              <span class="bg-green-500 text-white text-xs px-3 py-1 rounded-full">Full Stack</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3">Application Covoiturage</h3>
-            <p class="text-gray-400 mb-4 text-sm">
-              Plateforme complète de covoiturage avec application mobile, authentification sécurisée et gestion des trajets.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">NestJS</span>
-              <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">Angular</span>
-              <span class="px-2 py-1 bg-green-500/20 text-green-300 text-xs rounded">MySQL</span>
-            </div>
-            <a routerLink="/projets/covoiturage" class="text-green-400 hover:text-green-300 text-sm font-semibold inline-flex items-center">
-              En savoir plus
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Projet Formation Spring -->
-        <div class="group bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-700 hover:border-orange-500/50 transition-all duration-300">
-          <div class="h-48 bg-gradient-to-r from-orange-600 to-amber-600 relative overflow-hidden">
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
-            <div class="absolute top-4 right-4">
-              <span class="bg-orange-500 text-white text-xs px-3 py-1 rounded-full">Formation</span>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-3">Projets Spring Boot</h3>
-            <p class="text-gray-400 mb-4 text-sm">
-              Développement d'APIs avec Spring Boot dans le cadre de ma montée en compétences sur l'écosystème Java.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 text-xs rounded">Spring Boot</span>
-              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 text-xs rounded">Java</span>
-              <span class="px-2 py-1 bg-orange-500/20 text-orange-300 text-xs rounded">MySQL</span>
-            </div>
-            <a routerLink="/projets/spring-boot" class="text-orange-400 hover:text-orange-300 text-sm font-semibold inline-flex items-center">
-              Voir les réalisations
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="text-center mt-12">
-        <a routerLink="/projects" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold">
-          Voir tous mes projets
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Mes Compétences</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
+            Expertise technique et stack technologique complet
+          </p>
+          <span class="text-blue-600 dark:text-blue-400 group-hover:text-blue-500 dark:group-hover:text-blue-300 text-md font-semibold inline-flex items-center">
+          Explorer
+          <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
           </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- NAVIGATION VERS AUTRES PAGES -->
-  <section class="py-16 px-6 bg-gray-900/30">
-    <div class="container mx-auto max-w-6xl">
-      <h2 class="text-3xl font-bold mb-12 text-center">Explorez Mon Profil</h2>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Compétences -->
-        <a routerLink="/competences" class="group bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-blue-500 transition-all duration-300 hover:scale-105">
-          <div class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition-colors">
-            <span class="text-2xl">💼</span>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Mes Compétences</h3>
-          <p class="text-gray-400 mb-4">
-            Découvrez mon expertise technique détaillée et mon stack technologique complet
-          </p>
-          <span class="text-blue-400 group-hover:text-blue-300 text-sm font-semibold inline-flex items-center">
-            Explorer mes compétences
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-            </svg>
-          </span>
+        </span>
         </a>
 
-        <!-- Expériences -->
-        <a routerLink="/about" class="group bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-green-500 transition-all duration-300 hover:scale-105">
-          <div class="w-14 h-14 bg-green-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-500/30 transition-colors">
-            <span class="text-2xl">📈</span>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Mon Parcours</h3>
-          <p class="text-gray-400 mb-4">
-            Retracez mon parcours professionnel, mes formations et mes réalisations
-          </p>
-          <span class="text-green-400 group-hover:text-green-300 text-sm font-semibold inline-flex items-center">
-            Voir mon parcours
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        <!-- Projets -->
+        <a routerLink="/projects" class="group bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-300 dark:border-gray-700 hover:border-green-500 transition-all duration-300 hover:scale-105 shadow-lg">
+          <div class="w-12 h-12 bg-green-100 dark:bg-green-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-200 dark:group-hover:bg-green-500/30 transition-colors">
+            <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
             </svg>
-          </span>
+          </div>
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Mes Projets</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
+            Applications complètes et réalisations techniques
+          </p>
+          <span class="text-green-600 dark:text-green-400 group-hover:text-green-500 dark:group-hover:text-green-300 text-md font-semibold inline-flex items-center">
+          Découvrir
+          <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </span>
+        </a>
+
+        <!-- Parcours -->
+        <a routerLink="/about" class="group bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-300 dark:border-gray-700 hover:border-orange-500 transition-all duration-300 hover:scale-105 shadow-lg">
+          <div class="w-12 h-12 bg-orange-100 dark:bg-orange-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-orange-200 dark:group-hover:bg-orange-500/30 transition-colors">
+            <svg class="w-6 h-6 text-orange-600 dark:text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Mon Parcours</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
+            Expérience professionnelle et formations
+          </p>
+          <span class="text-orange-600 dark:text-orange-400 group-hover:text-orange-500 dark:group-hover:text-orange-300 text-md font-semibold inline-flex items-center">
+          Voir
+          <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </span>
         </a>
 
         <!-- Contact -->
-        <a routerLink="/contact" class="group bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105">
-          <div class="w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-500/30 transition-colors">
-            <span class="text-2xl">✉️</span>
+        <a routerLink="/contact" class="group bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-300 dark:border-gray-700 hover:border-purple-500 transition-all duration-300 hover:scale-105 shadow-lg">
+          <div class="w-12 h-12 bg-purple-100 dark:bg-purple-500/20 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-200 dark:group-hover:bg-purple-500/30 transition-colors">
+            <svg class="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
           </div>
-          <h3 class="text-xl font-bold mb-3">Contactez-moi</h3>
-          <p class="text-gray-400 mb-4">
-            Discutons de votre projet ou d'opportunités professionnelles
+          <h3 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Contactez-moi</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm mb-3">
+            Opportunités et collaborations
           </p>
-          <span class="text-purple-400 group-hover:text-purple-300 text-sm font-semibold inline-flex items-center">
-            Me contacter
-            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <span class="text-purple-600 dark:text-purple-400 group-hover:text-purple-500 dark:group-hover:text-purple-300 text-md font-semibold inline-flex items-center">
+          Contacter
+          <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </span>
+        </a>
+      </div>
+
+      <!-- Mini-présentation des projets en dessous -->
+      <div class="mt-12 pt-8 border-t border-gray-300 dark:border-gray-700">
+        <h2 class="text-3xl font-bold mb-12 text-center text-gray-800 dark:text-white">🚀 Projets Récents</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Projet 1 -->
+          <div class="bg-white dark:bg-gray-800/30 rounded-xl p-5 border border-gray-300 dark:border-gray-700 shadow">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-green-100 dark:bg-green-500/20 rounded-lg flex items-center justify-center mr-3">
+                <svg class="w-4 h-4 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h4 class="font-bold text-gray-800 dark:text-white">Covoiturage</h4>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-md mb-3">
+              Full stack : NestJS + Angular + Mobile
+            </p>
+            <div class="flex flex-wrap gap-1">
+              <span class="px-2 py-0.5 bg-green-100 dark:bg-green-500/10 text-green-800 dark:text-green-300 text-md rounded">NestJS</span>
+              <span class="px-2 py-0.5 bg-blue-100 dark:bg-blue-500/10 text-blue-800 dark:text-blue-300 text-md rounded">Angular</span>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+          <div class="bg-white dark:bg-gray-800/30 rounded-xl p-5 border border-gray-300 dark:border-gray-700 shadow">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-blue-100 dark:bg-blue-500/20 rounded-lg flex items-center justify-center mr-3">
+                <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <h4 class="font-bold text-gray-800 dark:text-white">Stock Management</h4>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-md mb-3">
+              Desktop Java avec MySQL & reporting
+            </p>
+            <div class="flex flex-wrap gap-1">
+              <span class="px-2 py-0.5 bg-orange-100 dark:bg-orange-500/10 text-orange-800 dark:text-orange-300 text-md rounded">Java</span>
+              <span class="px-2 py-0.5 bg-green-100 dark:bg-green-500/10 text-green-800 dark:text-green-300 text-md rounded">Swing</span>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="bg-white dark:bg-gray-800/30 rounded-xl p-5 border border-gray-300 dark:border-gray-700 shadow">
+            <div class="flex items-center mb-3">
+              <div class="w-8 h-8 bg-yellow-100 dark:bg-yellow-500/20 rounded-lg flex items-center justify-center mr-3">
+                <svg class="w-4 h-4 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                </svg>
+              </div>
+              <h4 class="font-bold text-gray-800 dark:text-white">CampingCarFinder</h4>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-md mb-3">
+              Full-Stack : Java - SpringBoot - JavaFX - tailwindCSS
+            </p>
+            <div class="flex flex-wrap gap-1">
+              <span class="px-2 py-0.5 bg-red-100 dark:bg-red-500/10 text-red-800 dark:text-red-300 text-md rounded">Spring Boot</span>
+              <span class="px-2 py-0.5 bg-green-100 dark:bg-green-600/10 text-green-800 dark:text-green-300 text-md rounded">Java</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-6">
+          <a routerLink="/projects" class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 font-semibold text-sm">
+            Voir tous mes projets
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
             </svg>
-          </span>
-        </a>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -271,24 +264,24 @@
   <!-- CTA FINAL -->
   <section class="py-20 px-6">
     <div class="container mx-auto max-w-3xl">
-      <div class="text-center bg-gradient-to-r from-blue-900/20 to-green-900/20 py-16 rounded-3xl border border-blue-500/30 px-6">
-        <h2 class="text-3xl font-bold mb-4">Recherche active d'emploi</h2>
-        <p class="max-w-2xl mx-auto text-gray-300 mb-8">
-          Actuellement en recherche d'un poste de <strong>Développeur Full Stack Junior/Mid-Level</strong>.
+      <div class="text-center bg-gradient-to-r from-blue-100 to-green-100 dark:from-blue-900/20 dark:to-green-900/20 py-16 rounded-3xl border border-blue-300 dark:border-blue-500/30 px-6 shadow-xl">
+        <h2 class="text-3xl font-bold mb-4 text-gray-800 dark:text-white">Recherche active d'emploi</h2>
+        <p class="max-w-2xl mx-auto text-gray-700 dark:text-gray-300 mb-8">
+          Actuellement en recherche d'un poste de <strong class="text-blue-600 dark:text-blue-400">Développeur Full Stack Junior/Mid-Level</strong>.
           Spécialisé en backend avec NestJS et en montée en compétences sur Spring Boot.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="mailto:moatasm@email.com"
-             class="px-8 py-4 bg-gradient-to-r from-blue-500 to-green-500 rounded-xl font-semibold hover:from-blue-600 hover:to-green-600 transition duration-300">
+             class="px-8 py-4 bg-gradient-to-r from-blue-600 to-green-600 dark:from-blue-500 dark:to-green-500 rounded-xl font-semibold text-white hover:from-blue-700 hover:to-green-700 dark:hover:from-blue-600 dark:hover:to-green-600 transition duration-300">
             Me contacter pour un entretien
           </a>
           <a href="/assets/cv/cv.pdf" download
-             class="px-8 py-4 border-2 border-blue-500 text-blue-400 rounded-xl font-semibold hover:bg-blue-500 hover:text-white transition duration-300">
+             class="px-8 py-4 border-2 border-blue-500 text-blue-600 dark:text-blue-400 rounded-xl font-semibold hover:bg-blue-500 hover:text-white dark:hover:bg-blue-500 dark:hover:text-white transition duration-300">
             Télécharger mon CV
           </a>
         </div>
-        <div class="mt-8 pt-6 border-t border-gray-700">
-          <p class="text-gray-400 text-sm">
+        <div class="mt-8 pt-6 border-t border-gray-300 dark:border-gray-700">
+          <p class="text-gray-600 dark:text-gray-400 text-sm">
           <span class="inline-flex items-center mr-4">
             <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
             Disponible immédiatement

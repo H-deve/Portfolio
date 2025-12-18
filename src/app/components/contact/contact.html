@@ -1,152 +1,123 @@
-<div class="min-h-screen bg-gray-900 text-white py-20">
-  <div class="container mx-auto px-6 max-w-6xl">
-    <h1 class="text-4xl md:text-5xl font-bold text-center mb-4 text-blue-400">
+<div class="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white py-16 transition-colors duration-300">
+  <div class="container mx-auto px-6 max-w-4xl">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-4 text-blue-600 dark:text-blue-400">
       Contactez-moi
     </h1>
-    <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-      Vous avez un projet en tête ? N'hésitez pas à me contacter pour en discuter.
+    <p class="text-gray-600 dark:text-gray-400 text-center mb-10 max-w-xl mx-auto">
+      Discutons de votre projet ou d'une opportunité de collaboration.
     </p>
 
-    <div class="grid lg:grid-cols-2 gap-12">
-      <!-- Formulaire de contact -->
-      <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl">
-        <h2 class="text-2xl font-bold mb-6">Envoyez un message</h2>
+    <div class="grid md:grid-cols-3 gap-8">
 
-        <form class="space-y-6">
-          <div>
-            <label class="block text-gray-300 mb-2" for="name">Nom complet</label>
-            <input
-              type="text"
-              id="name"
-              class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition"
-              placeholder="Votre nom"
-            >
+      <!-- Informations essentielles (OPTIMISÉ) -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
+        <h2 class="text-xl font-bold mb-6 text-gray-800 dark:text-white">Coordonnées</h2>
+        <div class="space-y-4">
+          <div class="flex items-start space-x-3">
+            <span class="text-gray-500 dark:text-gray-400 mt-1">✉️</span>
+            <div>
+              <p class="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wide mb-1">Email</p>
+              <p class="text-gray-800 dark:text-white">hajjo.dev@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="text-gray-500 dark:text-gray-400 mt-1">📍</span>
+            <div>
+              <p class="text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wide mb-1">Localisation</p>
+              <p class="text-gray-800 dark:text-white">Morbihan , France</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-2 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
+        <h2 class="text-xl font-bold mb-6 text-gray-800 dark:text-white">Envoyez un message</h2>
+
+        <form class="space-y-4">
+          <div class="grid md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-gray-600 dark:text-gray-400 text-xs uppercase tracking-wide mb-2" for="name">
+                Nom
+              </label>
+              <input
+                type="text"
+                id="name"
+                class="w-full px-4 py-3 bg-gray-100 dark:bg-gray-700/50 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition placeholder-gray-500 dark:placeholder-gray-400"
+                placeholder="Votre nom"
+                required
+              >
+            </div>
+            <div>
+              <label class="block text-gray-600 dark:text-gray-400 text-xs uppercase tracking-wide mb-2" for="email">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                class="w-full px-4 py-3 bg-gray-100 dark:bg-gray-700/50 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition placeholder-gray-500 dark:placeholder-gray-400"
+                placeholder="votre@email.com"
+                required
+              >
+            </div>
           </div>
 
           <div>
-            <label class="block text-gray-300 mb-2" for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition"
-              placeholder="votre@email.com"
-            >
-          </div>
-
-          <div>
-            <label class="block text-gray-300 mb-2" for="subject">Sujet</label>
+            <label class="block text-gray-600 dark:text-gray-400 text-xs uppercase tracking-wide mb-2" for="subject">
+              Sujet
+            </label>
             <input
               type="text"
               id="subject"
-              class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition"
-              placeholder="Sujet de votre message"
+              class="w-full px-4 py-3 bg-gray-100 dark:bg-gray-700/50 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition placeholder-gray-500 dark:placeholder-gray-400"
+              placeholder="Objet de votre message"
+              required
             >
           </div>
 
           <div>
-            <label class="block text-gray-300 mb-2" for="message">Message</label>
+            <label class="block text-gray-600 dark:text-gray-400 text-xs uppercase tracking-wide mb-2" for="message">
+              Message
+            </label>
             <textarea
               id="message"
-              rows="6"
-              class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500 transition resize-none"
-              placeholder="Votre message..."
+              rows="4"
+              class="w-full px-4 py-3 bg-gray-100 dark:bg-gray-700/50 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition resize-none placeholder-gray-500 dark:placeholder-gray-400"
+              placeholder="..."
+              required
             ></textarea>
           </div>
 
           <button
             type="submit"
-            class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105"
+            class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-lg hover:shadow-blue-500/20"
           >
             Envoyer le message
           </button>
         </form>
       </div>
 
-      <!-- Informations de contact -->
-      <div class="space-y-8">
-        <!-- Coordonnées -->
-        <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl">
-          <h2 class="text-2xl font-bold mb-6">Mes coordonnées</h2>
-
-          <div class="space-y-6">
-            <div class="flex items-start">
-              <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-xl">📍</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg">Localisation</h3>
-                <p class="text-gray-400">[Votre ville], [Votre pays]</p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-xl">📧</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg">Email</h3>
-                <p class="text-gray-400">contact@votredomaine.com</p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
-                <span class="text-xl">📱</span>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg">Téléphone</h3>
-                <p class="text-gray-400">+33 1 23 45 67 89</p>
-              </div>
-            </div>
+      <!-- Réseaux sociaux OPTIMISÉ -->
+      <div class="md:col-span-3 bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-bold mb-2 text-gray-800 dark:text-white">Réseaux sociaux</h2>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">Suivez mon travail et mon parcours</p>
           </div>
-        </div>
-
-        <!-- Réseaux sociaux -->
-        <div class="bg-gray-800 rounded-2xl p-8 shadow-2xl">
-          <h2 class="text-2xl font-bold mb-6">Réseaux sociaux</h2>
-
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <a href="#"
-               class="flex flex-col items-center p-4 bg-gray-700 rounded-xl hover:bg-gray-600 transition group">
-              <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mb-2 group-hover:bg-black transition">
-                <span class="text-2xl">💼</span>
-              </div>
-              <span class="font-semibold">LinkedIn</span>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://www.linkedin.com/in/moatasm-hajjo" target="_blank"
+               class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg transition text-gray-800 dark:text-white">
+              <span>💼</span>
+              <span>LinkedIn</span>
             </a>
-
-            <a href="#"
-               class="flex flex-col items-center p-4 bg-gray-700 rounded-xl hover:bg-gray-600 transition group">
-              <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mb-2 group-hover:bg-black transition">
-                <span class="text-2xl">🐙</span>
-              </div>
-              <span class="font-semibold">GitHub</span>
-            </a>
-
-            <a href="#"
-               class="flex flex-col items-center p-4 bg-gray-700 rounded-xl hover:bg-gray-600 transition group">
-              <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mb-2 group-hover:bg-black transition">
-                <span class="text-2xl">🐦</span>
-              </div>
-              <span class="font-semibold">Twitter</span>
-            </a>
-
-            <a href="#"
-               class="flex flex-col items-center p-4 bg-gray-700 rounded-xl hover:bg-gray-600 transition group">
-              <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center mb-2 group-hover:bg-black transition">
-                <span class="text-2xl">📸</span>
-              </div>
-              <span class="font-semibold">Instagram</span>
+            <a href="https://github.com/H-deve" target="_blank"
+               class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-lg transition text-gray-800 dark:text-white">
+              <span>🐙</span>
+              <span>GitHub</span>
             </a>
           </div>
-        </div>
-
-        <!-- Disponibilité -->
-        <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 shadow-2xl">
-          <h2 class="text-2xl font-bold mb-4">Disponibilité</h2>
-          <p class="mb-4">Je suis actuellement disponible pour de nouveaux projets et opportunités.</p>
-          <p class="font-semibold">Temps de réponse : Sous 24h</p>
         </div>
       </div>
+
     </div>
   </div>
 </div>

@@ -1,6 +1,7 @@
-import { Component, HostListener } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule} from '@angular/router';
+import {ThemeService} from '../../../core/services/theme';
 
 @Component({
   selector: 'app-header',
@@ -13,6 +14,9 @@ export class Header {
 
   isMenuOpen = false;
   isScrolled = false;
+  isDarkMode = false;
+
+  constructor(private themeService: ThemeService) {}
 
   @HostListener('window:scroll')
   onWindowScroll() {
@@ -49,5 +53,10 @@ export class Header {
     if (this.isMenuOpen) {
       this.closeMenu();
     }
+  }
+
+  toggleTheme() {
+    // Call service and update local state
+    this.isDarkMode = this.themeService.toggleTheme();
   }
 }
