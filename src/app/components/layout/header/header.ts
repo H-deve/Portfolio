@@ -10,13 +10,20 @@ import {ThemeService} from '../../../core/services/theme';
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
-export class Header {
+export class Header implements OnInit {
 
   isMenuOpen = false;
   isScrolled = false;
   isDarkMode = false;
 
   constructor(private themeService: ThemeService) {}
+
+  ngOnInit(): void {
+    this.onWindowScroll();
+
+    // Initialize theme state from service
+    this.isDarkMode = this.themeService.isDarkMode();
+    }
 
   @HostListener('window:scroll')
   onWindowScroll() {
