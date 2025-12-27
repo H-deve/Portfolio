@@ -33,11 +33,6 @@ The portfolio is designed to:
 
 ---
 
-
-
-    ⚠️ Angular CLI does not include an E2E framework by default.
-    You can integrate tools like Cypress or Playwright.
-
 🎯 Learning Goals
 
 This project was created to practice:
@@ -55,6 +50,5 @@ This project was created to practice:
 
 📚 Additional Resources
 
-    Angular CLI Overview: https://angular.io/cli
 
     Angular Documentation: https://angular.io/docs
