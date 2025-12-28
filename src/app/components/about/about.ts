@@ -11,10 +11,8 @@ import {ThemeService} from '../../core/services/theme';
   styleUrl: './about.css',
 })
 export class About {
-  isDarkMode =false;
+  // add theme service
     constructor(private themeService: ThemeService) {
     }
-
-
 
 }
