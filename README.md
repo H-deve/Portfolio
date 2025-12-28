@@ -1,59 +1,54 @@
-# Portfolio
+# 🌐 Personal Portfolio – Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.7.
+[![Angular](https://img.shields.io/badge/Angular-20-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-## Development server
+> **Showcase your skills. Tell your story.**  
+> A modern personal portfolio built with Angular.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 📖 Overview
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+This project is a **personal portfolio web application** developed using **Angular**.  
+It presents personal information, skills, projects, and contact details in a clean and modern interface.
 
-## Code scaffolding
+The portfolio is designed to:
+- Highlight technical skills and projects
+- Practice Angular fundamentals and best practices
+- Serve as an online professional profile
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## ✨ Features
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Responsive and modern UI
+- Modular Angular architecture
+- Reusable components
+- Easy customization of content
+- Optimized production build
+- Ready for deployment on hosting platforms
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+🎯 Learning Goals
 
-To build the project run:
+This project was created to practice:
 
-```bash
-ng build
-```
+    Angular components and modules
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+    Routing and reusable layouts
 
-## Running unit tests
+    Responsive UI design
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+    Angular CLI workflow
 
-```bash
-ng test
-```
+    Production build and deployment readiness
 
-## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+📚 Additional Resources
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    Angular Documentation: https://angular.io/docs
