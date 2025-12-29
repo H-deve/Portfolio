@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, Inject} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
 import emailJs, { EmailJSResponseStatus } from '@emailjs/browser';
+import {EmailJsConfig} from '../../token';
 
 @Component({
   selector: 'app-contact',
@@ -14,23 +15,21 @@ import emailJs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrl: './contact.css',
 })
 export class Contact {
+  // use injector to get emailJsConfig
+  constructor(@Inject('EMAILJS_CONFIG') private emailJsConfig: EmailJsConfig) {
+  }
   public sendEmail(e: Event): void {
 
     e.preventDefault();
 
-    emailJs.sendForm('service_o2sbbh7', 'template_78zumlo', e.target as HTMLFormElement, {
-      publicKey: 'IOLcyx66KBQBmqUy_',
-    })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', (error as EmailJSResponseStatus).text);
-        },
-      );
+    emailJs.sendForm(
+      this.emailJsConfig.serviceID,
+      this.emailJsConfig.templateID,
+      e.target as HTMLFormElement,
+      {publicKey: this.emailJsConfig.publicKey})
+      .then(() => console.log('SUCCESS!'))
+      .catch((error: EmailJSResponseStatus) => console.log('FAILED...', error.text));  }
 
-  }
   socialLinks = [
     {
       icon: 'fab fa-github',
