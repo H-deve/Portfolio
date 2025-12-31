@@ -2,11 +2,11 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZonelessC
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
-import { EMAILJS_CONFIG, EmailJsConfig } from './token';
+import { EMAILJS_CONFIG, EmailJsConfigInterface } from './token';
 
 
 // Define the EmailJsConfig value
-export const emailJsConfigValue: EmailJsConfig = {
+export const emailJsConfigValue: EmailJsConfigInterface = {
   serviceID: 'service_o2sbbh7',
   templateID: 'template_78zumlo',
   publicKey: 'IOLcyx66KBQBmqUy_',

@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import {Footer} from './components/layout/footer/footer';
-import {NavigationEnd, Router, RouterOutlet} from '@angular/router';
+import {Router, RouterOutlet} from '@angular/router';
 import {Header} from './components/layout/header/header';
 
 @Component({
