@@ -1,19 +1,121 @@
 <!doctype html>
-<!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Portfolio</title>
+
+  <!-- Titre professionnel (important pour le SEO et les recruteurs) -->
+  <title>Moatasm Hajjo | Développeur Full Stack Java/Spring Boot & Node.js</title>
+
+  <!-- Meta Description pour les moteurs de recherche -->
+  <meta name="description" content="Portfolio de Moatasm Hajjo - Développeur Full Stack spécialisé en Java Spring Boot, Node.js, NestJS et Angular. En recherche active CDI/CDD dans Bretagne.">
+
+  <!-- Keywords pour le référencement -->
+  <meta name="keywords" content="Développeur Full Stack, Java Spring Boot, Node.js, NestJS, Angular, Morbihan, CDI, Développeur Backend, Architecture Microservices">
+
+  <!-- Open Graph pour le partage sur réseaux sociaux -->
+  <meta property="og:title" content="Moatasm Hajjo - Développeur Full Stack">
+  <meta property="og:description" content="Portfolio professionnel - Développeur Full Stack spécialisé en technologies modernes">
+  <meta property="og:type" content="website">
+
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Moatasm Hajjo | Développeur Full Stack">
+  <meta name="twitter:description" content="Portfolio d'un développeur passionné par les architectures modernes">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.devlabcorp.com/">
+
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Basic favicon (fallback) -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+
+  <!-- Modern favicons for all devices -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/android-chrome-512x512.png">
+
+  <!-- PWA & Browser theming -->
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- ======= END FAVICON CODE ======= -->
+
+  <!-- Viewport avec configuration avancée -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+  <!-- Viewport avec configuration avancée -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+
+
+
+  <!-- Préchargement des ressources critiques -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+
+  <!-- Polices optimisées -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Font Awesome avec intégration performante -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Optimisation des performances -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- Auteur et droits -->
+  <meta name="author" content="Moatasm Hajjo">
+  <meta name="copyright" content="Moatasm Hajjo">
+
+  <!-- Localisation -->
+  <meta name="geo.region" content="FR-56">
+  <meta name="geo.placename" content="Morbihan">
+  <meta name="geo.position" content="47.658; -2.762">
+  <meta name="ICBM" content="47.658, -2.762">
+
+  <!--  zoom sur iOS -->
+  <meta name="format-detection" content="telephone=yes">
+
+  <!-- Structure de données pour le SEO (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Moatasm Hajjo",
+      "url": "https://www.devlabcorp.com/",
+      "image": "",
+      "jobTitle": "Développeur Full Stack",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Morbihan",
+        "addressCountry": "FR"
+      },
+      "email": "mailto:hajjo.dev@gmail.com",
+      "knowsAbout": ["Java Spring Boot", "Node.js", "NestJS", "Angular", "Microservices", "Docker", "AWS"],
+      "sameAs": [
+        "https://github.com/H-deve",
+        "https://linkedin.com/in/moatasm-hajjo"
+      ]
+    }
+  </script>
 
 </head>
 <body class="bg-background text-text">
+<!-- Navigation cachée pour les lecteurs d'écran -->
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-blue-600 focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">
+  Aller au contenu principal
+</a>
+
 <app-root></app-root>
+
+
 </body>
 </html>
